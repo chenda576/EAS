@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.ui.theme" value="simple" />
+	<package name="default" extends="struts-default">
+		<action name="Login" class="org.action.LoginAction">
+			<result name="stuSUCCESS">/stuHeader.jsp</result>
+			<result name="tecSUCCESS">/tecHeader.jsp</result>
+			<result name="adminSUCCESS">/adminOP.jsp</result>
+			<result name="input">/Login.jsp</result>
+			<result name="error">/Login.jsp</result>
+		</action>
+		<action name="stuRegister" class="org.action.StuRegisterAction">
+			<result name="success">/Login.jsp</result>
+			<result name="input">/stuRegister.jsp</result>
+			<result name="error">/stuRegister.jsp</result>
+		</action>
+		<action name="tecRegister" class="org.action.TecRegisterAction">
+			<result name="success">/Login.jsp</result>
+			<result name="input">/tecRegister.jsp</result>
+			<result name="error">/tecRegister.jsp</result>
+		</action>
+		<action name="addNewClass" class="org.action.AddNewClassAction">
+			<result name="success">/adminOP.jsp</result>
+			<result name="input">/adminOP.jsp</result>
+			<result name="error">/adminOP.jsp</result>
+		</action>
+		<action name="findClass" class="org.action.FindClassAction">
+			<result name="success">/adminOP.jsp</result>
+			<result name="input">/adminOP.jsp</result>
+			<result name="error">/adminOP.jsp</result>
+		</action>
+		<action name="findOClass" class="org.action.FindOClassAction">
+			<result name="success">/adminOP.jsp</result>
+			<result name="input">/adminOP.jsp</result>
+			<result name="error">/adminOP.jsp</result>
+		</action>
+		<action name="activeClass" class="org.action.ActiveClassAction">
+			<result name="success">/adminOP.jsp</result>
+			<result name="input">/adminOP.jsp</result>
+			<result name="error">/adminOP.jsp</result>
+		</action>
+		<action name="closeClass" class="org.action.ClossClassAction">
+			<result name="success">/adminOP.jsp</result>
+			<result name="input">/adminOP.jsp</result>
+			<result name="error">/adminOP.jsp</result>
+		</action>
+		<action name="attendClass" class="org.action.AttendClassAction">
+			<result name="success">/stuHeader.jsp</result>
+			<result name="input">/stuHeader.jsp</result>
+			<result name="error">/stuHeader.jsp</result>
+		</action>
+	    <action name="quitClass" class="org.action.QuitClassAction">
+			<result name="success">/stuHeader.jsp</result>
+			<result name="input">/stuHeader.jsp</result>
+			<result name="error">/stuHeader.jsp</result>
+		</action>
+		<action name="lookClass" class="org.action.LookClassAction">
+			<result name="success">/stuHeader.jsp</result>
+			<result name="input">/stuHeader.jsp</result>
+			<result name="error">/stuHeader.jsp</result>
+		</action>
+		<action name="lookClassTable" class="org.action.LookClassTableAction">
+			<result name="success">/stuHeader.jsp</result>
+			<result name="input">/stuHeader.jsp</result>
+			<result name="error">/stuHeader.jsp</result>
+		</action>
+		<action name="lookGrade" class="org.action.LookGradeAction">
+			<result name="success">/stuHeader.jsp</result>
+			<result name="input">/stuHeader.jsp</result>
+			<result name="error">/stuHeader.jsp</result>
+		</action>
+		<action name="lookOpenClass" class="org.action.LookOpenClassAction">
+			<result name="success">/stuHeader.jsp</result>
+			<result name="input">/stuHeader.jsp</result>
+			<result name="error">/stuHeader.jsp</result>
+		</action>
+		<action name="tecFind" class="org.action.TecFindAction">
+			<result name="success">/tecHeader.jsp</result>
+			<result name="input">/tecHeader.jsp</result>
+			<result name="error">/tecHeader.jsp</result>
+		</action>
+		<action name="tecFindClass" class="org.action.TecFindClassAction">
+			<result name="success">/tecHeader.jsp</result>
+			<result name="input">/tecHeader.jsp</result>
+			<result name="error">/tecHeader.jsp</result>
+		</action>
+		<action name="gaveGrade" class="org.action.GaveGradeAction">
+			<result name="success">/tecHeader.jsp</result>
+			<result name="input">/tecHeader.jsp</result>
+			<result name="error">/tecHeader.jsp</result>
+		</action>
+	 </package>
+</struts>

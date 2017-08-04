@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"  
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="tec.tno">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>工号不能为空！</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">4</param>
+			<param name="maxLength">4</param>
+			<message>工号不符合规范！</message>
+		</field-validator>
+	</field>
+	<field name="tec.tname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>姓名不能为空！</message>
+		</field-validator>
+	</field>
+</validators>

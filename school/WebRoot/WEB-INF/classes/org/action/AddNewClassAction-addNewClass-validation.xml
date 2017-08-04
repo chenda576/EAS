@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.3//EN"  
+"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="cla.cno">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>课号不能为空！</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">6</param>
+			<message>学号不符合规范！</message>
+		</field-validator>
+	</field>
+	<field name="cla.cname">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>课名不能为空！</message>
+		</field-validator>
+	</field>
+	<field name="cla.rate">
+		<field-validator type="int">
+			<param name="min">0</param>
+			<param name="max">100</param>
+			<message>比例在1-100之间</message>
+		</field-validator>
+	</field>
+	<field name="cla.credit">
+		<field-validator type="int">
+			<param name="min">0</param>
+			<param name="max">100</param>
+			<message>学分在1-100之间</message>
+		</field-validator>
+	</field>
+</validators>
